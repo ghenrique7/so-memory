@@ -1,6 +1,3 @@
-// Chave de API do OpenAI
-const apiKey = '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';
-
 function sendMessage(){
     var message = document.getElementById('message-input')
     if(!message.value)
@@ -24,7 +21,7 @@ function sendMessage(){
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            Authorization: `Bearer ${apiKey}`,
+            Authorization: `Bearer ${'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'}`,
         },
         body: JSON.stringify({
             model: "text-davinci-003",

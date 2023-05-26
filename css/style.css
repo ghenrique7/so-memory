@@ -13,7 +13,11 @@ body {
 
 a {
     text-decoration: none;
-    color: blue; 
+    color: green;
+}
+
+a:hover{
+    color: white;
 }
 
 .btn {
