@@ -16,12 +16,12 @@ body{
 }
 
 #navbar-container {
-  width: 80%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -128,4 +128,22 @@ button:hover{
 .response-message{
   text-align: left;
   background-color: var(--gray2);
+}
+
+@media screen and (max-width: 900px) {
+  
+  #message-input{
+    width: 80%;
+  }
+
+  .box-questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 800px;
+    width: 430px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
 }
