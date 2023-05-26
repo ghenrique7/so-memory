@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 // Chave de API do OpenAI
-const apiKey = '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'
+
 
 function sendMessage(){
     var message = document.getElementById('message-input')
@@ -24,7 +26,7 @@ function sendMessage(){
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            Authorization: `Bearer ${apiKey}`,
+            Authorization: `Bearer ${process.env.API_KEY}`,
         },
         body: JSON.stringify({
             model: "text-davinci-003",
