@@ -1,4 +1,4 @@
-import API_KEY from './apikey.js';
+const API_KEY = "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";
 
 function sendMessage(){
     var message = document.getElementById('message-input')
