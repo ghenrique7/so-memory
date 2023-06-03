@@ -48,7 +48,6 @@ a:hover{
     background: #111;
     color: #eee;
     height: 80px;
-    position: fixed;
 }
 
 #navbar-container {
@@ -144,10 +143,12 @@ a:hover{
 
 /* Product */
 #product {
-    width: 90%;
-    margin: auto;
-    padding: 50px;
+    width: 100%;
+    padding: 20px;
     min-height: 900px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
 }
 
 #product-container {
@@ -191,21 +192,23 @@ a:hover{
 }
 
 .enum-color {
-    color: green;   
+    color: #03fe03;   
 }
 
-.text > .headline-article{
+.headline-article{
     font-size: 3em;
     margin-bottom: 60px;
     line-height: 1em;
+    color: white;
+    text-align: center;
 }
 
-.text > .text-article {
+.text-article {
     font-size: 1.2em;
-    width: 80%;
     margin: auto;
     text-align: justify;
     padding: 20px;
+    color: #fff;
 }
 
 i {
@@ -250,7 +253,11 @@ i {
     text-align: center;
 }
 
+.card-header > h5 > button {
+    text-decoration: none;
+}
 
-@media screen and (max-width: 900px) {
-
+.card-header > h5 > button:hover {
+    color: green;
+    text-decoration: none;
 }
