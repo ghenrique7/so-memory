@@ -23,7 +23,7 @@ function sendMessage(){
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            Authorization: `Bearer ${'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'}`,
+            Authorization: `Bearer ${API_KEY}`,
         },
         body: JSON.stringify({
             model: "text-davinci-003",
