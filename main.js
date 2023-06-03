@@ -1,3 +1,5 @@
+import API_KEY from './apikey.js';
+
 function sendMessage(){
     var message = document.getElementById('message-input')
     if(!message.value)
